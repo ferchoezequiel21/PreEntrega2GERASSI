@@ -1,0 +1,34 @@
+/* estilos generales */
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.pagina-anime{
+     font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.presentacion-pagina{
+     font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* estilos header */
+
+.index-header{
+background-size: cover;
+background-repeat: no-repeat;
+height: 95px;
+
+}
+
+/*estilos main*/
+
+
+
