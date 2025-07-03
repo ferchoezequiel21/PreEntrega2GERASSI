@@ -1,45 +1,140 @@
 /* estilos generales */
-*{
-    font-family: "Poppins", sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.pagina-anime{
-     font-family: "Poppins", sans-serif;
+.pagina-anime {
+  font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-.presentacion-pagina{
-     font-family: "Poppins", sans-serif;
+.presentacion-pagina {
+  font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
 /* estilos header */
 
-.index-header{
-background-size: cover;
-background-repeat: no-repeat;
-height: 95px;
+.index-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95px;
 
 }
-.banner-principal{
+
+.banner-principal {
   background-image: url(../imagenes/anime_banner.jpg);
 
 }
-.texto-banner{
+
+.texto-banner {
   background-color: rgba(0, 0, 0, 0.6);
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
+
+
+/*main personajes*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.image-box img {
+  max-width: 250px;
+  height: auto;
+}
+
+.description-box {
+  max-width: 500px;
+}
+
+.description-box h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.description-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.fullmetal:hover {
+  cursor: url('../imagenes/cursor-fma.png'), auto;
+}
+
+.super-campeones:hover {
+  cursor: url('../imagenes/atom-cursor.png'), auto;
+}
+
+.seiya:hover {
+  cursor: url('../imagenes/seya-cursor.png'), auto;
+}
+
+.naruto:hover {
+  cursor: url('../imagenes/naruto-cursor.png'), auto;
+}
+
+.goku:hover {
+  cursor: url('../imagenes/goku-cursor.png'), auto;
+}
+
+
+
+.goku {
+  background-color: #f57c00;
+  ;
+}
+
+.naruto {
+  background-color: #f4a300;
+}
+
+
+.seiya {
+  background-color: #1e3d59;
+}
+
+
+.super-campeones {
+  background-color: #006400;
+}
+
+
+.fullmetal {
+  background-color: #6c0e23;
+}
+
+
+
+
+
+
+
+
+
 /*footer*/
 
-footer{
+footer {
   background-color: #003249;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -47,44 +142,45 @@ footer{
   overflow: hidden;
 }
 
-.block{
+.block {
   padding: 4rem;
 }
 
-.block-1, .block-3{
+.block-1,
+.block-3 {
   background-color: #9ad1d4;
 }
 
-.block-2{
+.block-2 {
   background-color: #007ea7;
   color: #fff;
 }
 
-.block-4{
+.block-4 {
   background-color: #ccdbdc;
 }
 
-.block-5{
+.block-5 {
   color: #fff;
 }
 
-.box-heading{
+.box-heading {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: .5rem;
 }
 
-.block ul li:hover{
+.block ul li a:hover {
   background-color: rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
-.block-5 p{
-  margin:1.5rem;
+.block-5 p {
+  margin: 1.5rem;
 }
 
-.block-5 button{
+.block-5 button {
   cursor: pointer;
   background-color: #fff;
   padding: 1rem;
@@ -94,34 +190,47 @@ footer{
   transition: all 400ms ease;
 }
 
-.block-5 button:hover{
+.block-5 button:hover {
   box-shadow: 0 0 20px #fff;
 }
 
 @media (max-width: 1024px) {
-  footer{
+  footer {
     grid-template-columns: 1fr 1fr;
   }
-  .block-5 p{
+
+  .block-5 p {
     grid-template-columns: span 2;
   }
 }
 
 @media (max-width: 768px) {
-  .block{
+  .block {
     padding: 4rem 2rem;
   }
+ 
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description-box {
+    max-width: 90%;
+  }
+
+
 }
 
 @media (max-width: 540px) {
-  footer{
+  footer {
     grid-template-columns: 1fr;
   }
-  .block-5{
+
+  .block-5 {
     grid-column: initial;
   }
-  .block{
+
+  .block {
     padding: 2rem;
   }
 }
-
