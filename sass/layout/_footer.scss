@@ -1,0 +1,64 @@
+
+/*footer*/
+
+footer {
+  background-color: #003249;
+  max-width: 100%;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 1.75rem;
+  overflow: hidden;
+}
+
+.block {
+  padding: 4rem;
+}
+
+.block-1,
+.block-3 {
+  background-color: #9ad1d4;
+}
+
+.block-2 {
+  background-color: #007ea7;
+  color: #fff;
+}
+
+.block-4 {
+  background-color: #ccdbdc;
+}
+
+.block-5 {
+  color: #fff;
+}
+
+.box-heading {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.block ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.block-5 p {
+  margin: 1.5rem;
+}
+
+.block-5 button {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 0;
+  transition: all 400ms ease;
+}
+
+.block-5 button:hover {
+  box-shadow: 0 0 20px #fff;
+}

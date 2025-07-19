@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .block-5 p {
+    grid-template-columns: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    padding: 4rem 2rem;
+  }
+ 
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description-box {
+    max-width: 90%;
+  }
+
+
+}
+
+@media (max-width: 540px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .block-5 {
+    grid-column: initial;
+  }
+
+  .block {
+    padding: 2rem;
+  }
+}

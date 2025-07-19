@@ -1,0 +1,84 @@
+
+/*main personajes*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.image-box img {
+  max-width: 250px;
+  height: auto;
+}
+
+.description-box {
+  max-width: 500px;
+}
+
+.description-box h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.description-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.fullmetal:hover {
+  cursor: url('../imagenes/cursor-fma.png'), auto;
+}
+
+.super-campeones:hover {
+  cursor: url('../imagenes/atom-cursor.png'), auto;
+}
+
+.seiya:hover {
+  cursor: url('../imagenes/seya-cursor.png'), auto;
+}
+
+.naruto:hover {
+  cursor: url('../imagenes/naruto-cursor.png'), auto;
+}
+
+.goku:hover {
+  cursor: url('../imagenes/goku-cursor.png'), auto;
+}
+
+
+
+.goku {
+  background-color: #f57c00;
+  ;
+}
+
+.naruto {
+  background-color: #f4a300;
+}
+
+
+.seiya {
+  background-color: #1e3d59;
+}
+
+
+.super-campeones {
+  background-color: #006400;
+}
+
+
+.fullmetal {
+  background-color: #6c0e23;
+}
+

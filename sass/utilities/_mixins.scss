@@ -1,0 +1,2 @@
+@mixin cursor-personalizado($img)
+  cursor: url("../imagenes/#{$img}"), auto

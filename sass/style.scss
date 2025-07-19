@@ -1,0 +1,17 @@
+/* base*/
+@use './base/reset';
+/*layout*/
+@use './layout/index';
+@use './layout/header';
+@use './layout/footer';
+@use './layout/personajes';
+/*utilities*/
+@use './utilities/variables';
+@use './utilities/mixins';
+/*mq*/
+@use './mq/mq';
+
+
+
+
+
