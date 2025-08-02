@@ -4,21 +4,15 @@
 }
 
 /*layout*/
+.pagina-anime, .presentacion-pagina {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* estilos generales */
 ul {
   list-style: none;
-}
-
-.pagina-anime {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.presentacion-pagina {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
 }
 
 /* estilos header */
@@ -34,7 +28,7 @@ ul {
 
 .texto-banner {
   background-color: rgba(0, 0, 0, 0.6);
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 /*footer*/

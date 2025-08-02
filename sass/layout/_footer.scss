@@ -1,8 +1,8 @@
-
+@use '../utilities/variables';
 /*footer*/
 
 footer {
-  background-color: #003249;
+  background-color: variables.$footer-base;
   max-width: 100%;
   margin: 1rem;
   display: grid;
@@ -17,20 +17,20 @@ footer {
 
 .block-1,
 .block-3 {
-  background-color: #9ad1d4;
+  background-color: variables.$footer-1;
 }
 
 .block-2 {
-  background-color: #007ea7;
-  color: #fff;
+  background-color: variables.$footer-2;
+  color: variables.$color-blanco;
 }
 
 .block-4 {
-  background-color: #ccdbdc;
+  background-color: variables.$footer-3;
 }
 
 .block-5 {
-  color: #fff;
+  color: variables.$color-blanco;
 }
 
 .box-heading {
@@ -51,7 +51,7 @@ footer {
 
 .block-5 button {
   cursor: pointer;
-  background-color: #fff;
+  background-color: variables.$color-blanco;
   padding: 1rem;
   font-size: 1.1rem;
   font-weight: bold;
@@ -60,5 +60,5 @@ footer {
 }
 
 .block-5 button:hover {
-  box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px variables.$color-blanco;
 }

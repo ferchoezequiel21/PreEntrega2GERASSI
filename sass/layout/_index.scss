@@ -1,3 +1,7 @@
+@use '../utilities/extends'; 
+
+
+
 /* estilos generales */
 
 
@@ -6,13 +10,9 @@ ul {
 }
 
 .pagina-anime {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+@extend %fuente;
 }
 
 .presentacion-pagina {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+@extend %fuente;
 }

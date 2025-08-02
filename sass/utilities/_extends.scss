@@ -1,0 +1,8 @@
+@use './variables';
+
+
+%fuente {
+  font-family: variables.$fuente;
+  font-weight: 100;
+  font-style: normal;
+}

@@ -1,3 +1,5 @@
+@use '../utilities/mixins';
+@use '../utilities/variables';
 
 /*main personajes*/
 
@@ -14,7 +16,7 @@ body {
   padding: 2rem;
   gap: 2rem;
   flex-wrap: wrap;
-  color: #fff;
+  color:  variables.$color-blanco;
 }
 
 .image-box img {
@@ -37,48 +39,55 @@ body {
 }
 
 .fullmetal:hover {
-  cursor: url('../imagenes/cursor-fma.png'), auto;
+  @include mixins.cursor-custom('../imagenes/cursor-fma.png');
+  
 }
 
 .super-campeones:hover {
-  cursor: url('../imagenes/atom-cursor.png'), auto;
+   @include mixins.cursor-custom('../imagenes/atom-cursor.png');
+  
+  
 }
 
 .seiya:hover {
-  cursor: url('../imagenes/seya-cursor.png'), auto;
+  @include mixins.cursor-custom('../imagenes/seya-cursor.png');
+  
 }
 
 .naruto:hover {
-  cursor: url('../imagenes/naruto-cursor.png'), auto;
+  @include mixins.cursor-custom('../imagenes/naruto-cursor.png');
+  
+
 }
 
 .goku:hover {
-  cursor: url('../imagenes/goku-cursor.png'), auto;
+  @include mixins.cursor-custom('../imagenes/goku-cursor.png');
+
 }
 
 
 
 .goku {
-  background-color: #f57c00;
+  background-color: variables.$goku-color;
   ;
 }
 
 .naruto {
-  background-color: #f4a300;
+  background-color: variables.$naruto-color;
 }
 
 
 .seiya {
-  background-color: #1e3d59;
+  background-color: variables.$seiya-color;
 }
 
 
 .super-campeones {
-  background-color: #006400;
+  background-color: variables.$campeones-color;
 }
 
 
 .fullmetal {
-  background-color: #6c0e23;
+  background-color: variables.$fullmetal-color;
 }
 
