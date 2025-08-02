@@ -1,18 +1,213 @@
-/* Error: expected "{".
- *   ,
- * 1 | @mixin cursor-personalizado($img)
- *   |                                  ^
- *   '
- *   sass\utilities\_mixins.scss 1:34  @use
- *   sass\style.scss 10:1              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  @mixin cursor-personalizado($img)\d\a   \2502                                   ^\a   \2575 \a   sass\\utilities\\_mixins.scss 1:34  @use\a   sass\\style.scss 10:1              root stylesheet';
+/* base*/
+* {
+  font-family: "Poppins", sans-serif;
 }
+
+/*layout*/
+/* estilos generales */
+ul {
+  list-style: none;
+}
+
+.pagina-anime {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.presentacion-pagina {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* estilos header */
+.index-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95px;
+}
+
+.banner-principal {
+  background-image: url(../imagenes/anime_banner.jpg);
+}
+
+.texto-banner {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+}
+
+/*footer*/
+footer {
+  background-color: #003249;
+  max-width: 100%;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 1.75rem;
+  overflow: hidden;
+}
+
+.block {
+  padding: 4rem;
+}
+
+.block-1,
+.block-3 {
+  background-color: #9ad1d4;
+}
+
+.block-2 {
+  background-color: #007ea7;
+  color: #fff;
+}
+
+.block-4 {
+  background-color: #ccdbdc;
+}
+
+.block-5 {
+  color: #fff;
+}
+
+.box-heading {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.block ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.block-5 p {
+  margin: 1.5rem;
+}
+
+.block-5 button {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 0;
+  transition: all 400ms ease;
+}
+
+.block-5 button:hover {
+  box-shadow: 0 0 20px #fff;
+}
+
+/*main personajes*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.image-box img {
+  max-width: 250px;
+  height: auto;
+}
+
+.description-box {
+  max-width: 500px;
+}
+
+.description-box h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.description-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.fullmetal:hover {
+  cursor: url("../imagenes/cursor-fma.png"), auto;
+}
+
+.super-campeones:hover {
+  cursor: url("../imagenes/atom-cursor.png"), auto;
+}
+
+.seiya:hover {
+  cursor: url("../imagenes/seya-cursor.png"), auto;
+}
+
+.naruto:hover {
+  cursor: url("../imagenes/naruto-cursor.png"), auto;
+}
+
+.goku:hover {
+  cursor: url("../imagenes/goku-cursor.png"), auto;
+}
+
+.goku {
+  background-color: #f57c00;
+}
+
+.naruto {
+  background-color: #f4a300;
+}
+
+.seiya {
+  background-color: #1e3d59;
+}
+
+.super-campeones {
+  background-color: #006400;
+}
+
+.fullmetal {
+  background-color: #6c0e23;
+}
+
+/*utilities*/
+/*mq*/
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .block-5 p {
+    grid-template-columns: span 2;
+  }
+}
+@media (max-width: 768px) {
+  .block {
+    padding: 4rem 2rem;
+  }
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .description-box {
+    max-width: 90%;
+  }
+}
+@media (max-width: 540px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .block-5 {
+    grid-column: initial;
+  }
+  .block {
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
